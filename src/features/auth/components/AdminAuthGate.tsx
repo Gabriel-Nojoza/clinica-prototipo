@@ -65,7 +65,7 @@ export function AdminAuthGate({ children }: PropsWithChildren) {
     return <>{children}</>;
   }
 
-  if (authUser && authUser.role !== "admin") {
+  if (authUser) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-slate-950 px-4 py-10">
         <Card className="w-full max-w-sm space-y-4">
